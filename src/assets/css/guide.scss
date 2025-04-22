@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.alingC{text-align:center}
+.point{color:rgb(237, 28, 36)}
+
+.guide-wrap{
+    &{position:relative;margin: 0 auto}
+    nav dd > a{padding:3px}
+    nav dd > a:hover{background-color:rgb(237, 28, 36);color:#fff !important;text-decoration:none;line-height:1.25em}
+    nav dd.active > a{color:rgb(237, 28, 36);font-weight:700}
+    header{
+        &{position:relative;border-bottom: 1px solid #DDD;padding-bottom: 10px;}
+        .logo{margin:20px 0 0 20px}
+        .gnb-menu{position:absolute; right: 0; top: 0; padding:20px 10px 15px}
+        .gnb-menu dl{display:flex; align-items: center;}
+        .gnb-menu dl>dt{position:relative;margin-right:10px;font-weight:700}
+        .gnb-menu dl>dt {display: none;}
+        .gnb-menu dl>dd {margin-left: 5px;}
+        .gnb-menu dl>dt::after{padding-right:10px;content:':'}
+        .gnb-menu dl > dd > a{display:block}
+    }
+    .guide-body{position:relative;padding:0 10px}
+    .guide-body:after{display:block;clear:both;content:''}
+
+    .sub-menu{
+        &{position:relative;padding:15px 0 15px;border-bottom: 1px solid #DDD;}
+        dl{display:flex; align-items: center; flex-wrap:wrap;}
+        dl > dt{position:relative;margin-right:10px;font-weight:700; padding:3px; font-weight:bold}
+        dl > dd{display:inline-flex; align-items: center; height:25px;}
+        dl > dd > a{display:inline-flex; align-items: center; height:inherit;}
+        dl > dd > a:after{content:'↓'}
+    }
+
+    .table-path{
+        &{width:100%;margin-bottom:40px;border-top:2px solid #ebebeb;border-bottom: 1px solid #ebebeb;border-right: 1px solid #ebebeb}
+        caption{position:relative;text-align:left; margin:20px 0 10px;}
+        caption .tit{font-size:16px; font-weight:bold}
+        caption .desc{position:absolute;right:10px;top:0;}
+        th, td{border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;vertical-align:middle}
+        thead th{padding:10px 0;background-color:#EEE}
+        thead th span{display:block}
+        td{padding:7px;}
+        tr.line td {border-top: 1px solid #666;}
+        tr:hover td {background: #f0f0f0;}
+    }
+}

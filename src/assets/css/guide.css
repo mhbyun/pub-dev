@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.alingC {
+  text-align: center;
+}
+
+.point {
+  color: rgb(237, 28, 36);
+}
+
+.guide-wrap {
+  position: relative;
+  margin: 0 auto;
+}
+.guide-wrap nav dd > a {
+  padding: 3px;
+}
+.guide-wrap nav dd > a:hover {
+  background-color: rgb(237, 28, 36);
+  color: #fff !important;
+  text-decoration: none;
+  line-height: 1.25em;
+}
+.guide-wrap nav dd.active > a {
+  color: rgb(237, 28, 36);
+  font-weight: 700;
+}
+.guide-wrap header {
+  position: relative;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+}
+.guide-wrap header .logo {
+  margin: 20px 0 0 20px;
+}
+.guide-wrap header .gnb-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 10px 15px;
+}
+.guide-wrap header .gnb-menu dl {
+  display: flex;
+  align-items: center;
+}
+.guide-wrap header .gnb-menu dl > dt {
+  position: relative;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.guide-wrap header .gnb-menu dl > dt {
+  display: none;
+}
+.guide-wrap header .gnb-menu dl > dd {
+  margin-left: 5px;
+}
+.guide-wrap header .gnb-menu dl > dt::after {
+  padding-right: 10px;
+  content: ":";
+}
+.guide-wrap header .gnb-menu dl > dd > a {
+  display: block;
+}
+.guide-wrap .guide-body {
+  position: relative;
+  padding: 0 10px;
+}
+.guide-wrap .guide-body:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.guide-wrap .sub-menu {
+  position: relative;
+  padding: 15px 0 15px;
+  border-bottom: 1px solid #DDD;
+}
+.guide-wrap .sub-menu dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.guide-wrap .sub-menu dl > dt {
+  position: relative;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 3px;
+  font-weight: bold;
+}
+.guide-wrap .sub-menu dl > dd {
+  display: inline-flex;
+  align-items: center;
+  height: 25px;
+}
+.guide-wrap .sub-menu dl > dd > a {
+  display: inline-flex;
+  align-items: center;
+  height: inherit;
+}
+.guide-wrap .sub-menu dl > dd > a:after {
+  content: "↓";
+}
+.guide-wrap .table-path {
+  width: 100%;
+  margin-bottom: 40px;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.guide-wrap .table-path caption {
+  position: relative;
+  text-align: left;
+  margin: 20px 0 10px;
+}
+.guide-wrap .table-path caption .tit {
+  font-size: 16px;
+  font-weight: bold;
+}
+.guide-wrap .table-path caption .desc {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.guide-wrap .table-path th, .guide-wrap .table-path td {
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  vertical-align: middle;
+}
+.guide-wrap .table-path thead th {
+  padding: 10px 0;
+  background-color: #EEE;
+}
+.guide-wrap .table-path thead th span {
+  display: block;
+}
+.guide-wrap .table-path td {
+  padding: 7px;
+}
+.guide-wrap .table-path tr.line td {
+  border-top: 1px solid #666;
+}
+.guide-wrap .table-path tr:hover td {
+  background: #f0f0f0;
+}

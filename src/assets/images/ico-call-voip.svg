@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="ico-call-voip" transform="translate(-8.3 -5.3)">
+    <rect id="사각형_36983" data-name="사각형 36983" width="32" height="32" transform="translate(8.3 5.3)" fill="none"/>
+    <g id="그룹_38929" data-name="그룹 38929">
+      <path id="_01" data-name=" 01" d="M30.8,23.9h0c-1.4-.5-2-.9-3.6,0-.8.4-1.7.8-2.5.2A20.948,20.948,0,0,1,23,22.7,11.511,11.511,0,0,1,21.6,21c-.6-.8,0-1.7.3-2.5a3.825,3.825,0,0,0,0-3.6h0a3.471,3.471,0,0,0-4-2.2,3.26,3.26,0,0,0-2.6,2.2c-.6,2.8.7,5.5,2.4,7.7a5.5,5.5,0,0,1,.7.9A31.463,31.463,0,0,0,22,27.2c.3.2.6.5.9.7,2.2,1.8,4.9,3.1,7.7,2.5a3,3,0,0,0,2.2-2.5,3.409,3.409,0,0,0-2.1-4Z" fill="#a9a9a9"/>
+      <g id="그룹_38448" data-name="그룹 38448">
+        <g id="타원_3651" data-name="타원 3651">
+          <circle id="타원_3653" data-name="타원 3653" cx="4" cy="4" r="4" transform="translate(25.8 12.3)" fill="none"/>
+          <circle id="타원_3654" data-name="타원 3654" cx="3.2" cy="3.2" r="3.2" transform="translate(26.6 13.1)" fill="none" stroke="#4771b7" stroke-width="1.6"/>
+        </g>
+        <line id="선_1095" data-name="선 1095" x2="4" y2="5" transform="translate(28.3 14.3)" fill="none" stroke="#4771b7" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

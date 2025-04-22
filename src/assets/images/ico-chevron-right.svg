@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ico-chevron-right" transform="translate(-17.2 -12.5)">
+    <rect id="사각형_38665" data-name="사각형 38665" width="16" height="16" transform="translate(17.2 12.5)" fill="none"/>
+    <rect id="사각형_38665-2" data-name="사각형 38665" width="16" height="16" transform="translate(17.2 12.5)" fill="none"/>
+    <path id="ico-chevron-right-2" d="M28.6,19.7a.9.9,0,0,1,.2,1.4s-.1.2-.2.2l-5.8,4.1a1.058,1.058,0,0,1-1.4-.2,1.421,1.421,0,0,1-.2-.6V16.4a.945.945,0,0,1,1-1,.735.735,0,0,1,.6.2l5.8,4.1Z" fill="#999"/>
+  </g>
+</svg>

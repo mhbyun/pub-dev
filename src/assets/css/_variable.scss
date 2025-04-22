@@ -1,0 +1,46 @@
+/* @extend */
+%form-style-base{font-family: inherit; height:40px; border:1px solid var(--color-input-border) !important; background: #fff; padding:0 0 0 10px !important; vertical-align:middle; font-size: 14px; color:var(--color-input) !important; outline:none; border-radius: 8px;}
+
+%form-style-error{border-color:var(--color-danger) !important;}
+
+
+%flex-center{display:flex; align-items: center; justify-content: center;}
+%flex-column{display:flex; flex-direction: column;}
+%inline-flex-center{display:inline-flex; align-items: center; justify-content: center;}
+
+%flex-item{
+    &{@extend %flex-center; justify-content: space-between;}
+    .item{
+        &{flex:1; display: flex;}
+        &.item-c{justify-content: center;}
+        &.item-r{justify-content: flex-end;}
+    }
+}
+
+
+
+%table-outline{outline:1px solid #ddd; outline-offset: -1px;}
+
+
+%shadow-style{border-radius:12px; box-shadow: 0 2px 6px rgb(0 0 0 / 4%); background: #fff;}
+%shadow-style-hover{outline:1px solid #000;}
+
+%box-style{border-radius: 10px; border: solid 1px #dedede;}
+
+%min-h-full{min-height: calc(100vh - 180px);}
+
+
+%scrollbar{
+    &::-webkit-scrollbar { width: 18px; height: 18px;}
+    &::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.12); border-radius: 10px; border: 6px solid transparent; background-clip: padding-box;}
+    &::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.25); border: 6px solid transparent;background-clip: padding-box;}
+    &::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0); border-radius: 10px; margin-top:8px; margin-bottom:8px;}
+}
+%scrollbar-w{
+    &::-webkit-scrollbar { width: 8px; height: 8px;}
+    &::-webkit-scrollbar-thumb { background: rgba(255,255,255, 0.08); border-radius: 10px;}
+    &::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255, 0.20);}
+    &::-webkit-scrollbar-track { background: rgba(255,255,255, 0.05); border-radius: 10px;}
+}
+
+%ellipsis{flex-grow:1; display:inline-block; width:100px; overflow:hidden; white-space:nowrap !important; text-overflow:ellipsis;}

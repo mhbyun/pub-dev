@@ -1,0 +1,26 @@
+<script>
+  let myPhonePopup = null
+
+  function openMyPhone() {
+    const url = 'http://localhost:9000/#/'
+    const popupName = 'MyPhonePopup'
+
+    // 팝업이 이미 열려 있는 경우
+    if (myPhonePopup && !myPhonePopup.closed) {
+      myPhonePopup.focus()
+      return
+    }
+
+    // 새 팝업 열기
+    myPhonePopup = window.open(
+      url,
+      popupName,
+      'width=1200,height=800,resizable=yes,scrollbars=yes,left=100,top=100'
+    )
+
+    // 팝업 차단되었을 경우
+    if (!myPhonePopup) {
+      alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도해주세요.')
+    }
+  }
+</script>

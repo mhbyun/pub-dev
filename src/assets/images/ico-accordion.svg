@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ico-dropdown-down-default" transform="translate(15.5 16) rotate(180)">
+    <rect id="bg-input-default" width="16" height="16" transform="translate(-0.5)" fill="none"/>
+    <path id="ico-dropdown-down-default-2" data-name="ico-dropdown-down-default" d="M4,6l5,5,5-5" transform="translate(-1.574 -0.5)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
