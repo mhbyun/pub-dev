@@ -4,16 +4,14 @@
       <li
         class="tab-title"
         :class="{ active: activeTab === 'call' }"
-        @click="activeTab = 'call', goDetail('')"
-        data-target="#tab1"
+        @click="() => { activeTab = 'call'; goDetail('') }"
       >
         통화
       </li>
       <li
         class="tab-title"
         :class="{ active: activeTab === 'msg' }"
-        @click="activeTab = 'msg', goDetail('msg')"
-        data-target="#tab2"
+        @click="() => { activeTab = 'msg'; goDetail('msg') }"
       >
         메시지 <i class="new-msg active">13</i>
       </li>
@@ -25,11 +23,12 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import TabCall from 'components/TabCall.vue'
-import TabMessage from 'components/TabMessage.vue'
+import TabCall from 'src/pages/Home/main/TabCall.vue'
+import TabMessage from 'src/pages/Home/main/TabMessage.vue'
 
 const activeTab = ref('call')
 

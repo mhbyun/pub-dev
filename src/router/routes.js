@@ -4,31 +4,31 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
-        path: '/',
+        path: '',
         components: {
-          main: () => import('pages/MyPhonePage.vue'),
-          detail: () => import('components/DetailCall.vue')
+          main: () => import('pages/Home/main/MyPhonePage.vue'),
+          detail: () => import('pages/Home/detail/DetailCall.vue')
         }
       },
       {
-        path: '/myphone',
+        path: 'myphone',
         components: {
-          main: () => import('pages/MyPhonePage.vue'),
-          detail: () => import('components/DetailCall.vue')
+          main: () => import('pages/Home/main/MyPhonePage.vue'),
+          detail: () => import('pages/Home/detail/DetailCall.vue')
         }
       },
       {
-        path: '/detailmsg',
+        path: 'detailmsg',
         components: {
-          main: () => import('pages/MyPhonePage.vue'),
-          detail: () => import('components/DetailMsg.vue')
+          main: () => import('pages/Home/main/MyPhonePage.vue'),
+          detail: () => import('pages/Home/detail/DetailMsg.vue')
         }
       },
       {
-        path: '/mobilebox',
+        path: 'mobilebox',
         components: {
-          main: () => import('pages/MobileboxPage.vue'),
-          detail: () => import('components/DetailMobileList.vue')
+          main: () => import('pages/Home/main/MobileboxPage.vue'),
+          detail: () => import('pages/Home/detail/DetailMobileList.vue')
         }
       }
     ],
@@ -37,40 +37,50 @@ const routes = [
     path: '/knowledge',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '',
+      {
+        path: '',
         components: {
-          main: () => import('pages/knowledge/ManualPage.vue'),
-          detail: () => import('components/knowledge/DetailManualList.vue')
+          main: () => import('pages/knowledge/main/ManualPage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailManualList.vue')
         }
       },
-      { path: '/knowledge/manual',
+      {
+        path: 'manual',
         components: {
-          main: () => import('pages/knowledge/ManualPage.vue'),
-          detail: () => import('components/knowledge/DetailManualList.vue')
+          main: () => import('pages/knowledge/main/ManualPage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailManualList.vue')
         }
       },
-      { path: '/knowledge/case',
+      {
+        path: 'manual/:id',
+        name: 'manualDetail',
         components: {
-          main: () => import('pages/knowledges/CasePage.vue'),
-          detail: () => import('components/knowledge/DetailCaseList.vue')
+          main: () => import('pages/knowledge/main/ManualPage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailManual.vue')
         }
       },
-      { path: '/knowledge/guide',
+      { path: 'case',
         components: {
-          main: () => import('pages/knowledge/GuidePage.vue'),
-          detail: () => import('components/knowledge/DetailGuideList.vue')
+          main: () => import('pages/knowledge/main/CasePage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailCaseList.vue')
         }
       },
-      { path: '/knowledge/law',
+      { path: 'guide',
         components: {
-          main: () => import('pages/knowledge/LawPage.vue'),
-          detail: () => import('components/knowledge/DetailLawList.vue')
+          main: () => import('pages/knowledge/main/GuidePage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailGuideList.vue')
         }
       },
-      { path: '/knowledge/assistant',
+      { path: 'law',
         components: {
-          main: () => import('pages/knowledge/AssistantPage.vue'),
-          detail: () => import('components/knowledge/DetailAssistantList.vue')
+          main: () => import('pages/knowledge/main/LawPage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailLawList.vue')
+        }
+      },
+      { path: 'assistant',
+        components: {
+          main: () => import('pages/knowledge/main/AssistantPage.vue'),
+          detail: () => import('pages/knowledge/detail/DetailAssistantList.vue')
         }
       },
     ],
@@ -81,26 +91,26 @@ const routes = [
     children: [
       { path: '',
         components: {
-          main: () => import('pages/analysis/HistoryPage.vue'),
-          detail: () => import('components/analysis/DetailHistoryList.vue')
+          main: () => import('pages/analysis/main/HistoryPage.vue'),
+          detail: () => import('pages/analysis/detail/DetailHistoryList.vue')
         }
       },
-      { path: '/analysis/history',
+      { path: 'history',
         components: {
-          main: () => import('pages/analysis/HistoryPage.vue'),
-          detail: () => import('components/analysis/DetailHistoryList.vue')
+          main: () => import('pages/analysis/main/HistoryPage.vue'),
+          detail: () => import('pages/analysis/detail/DetailHistoryList.vue')
         }
       },
-      { path: '/analysis/statistics',
+      { path: 'statistics',
         components: {
-          main: () => import('pages/analysis/StatisticsPage.vue'),
-          detail: () => import('components/analysis/DetailStatisticsList.vue')
+          main: () => import('pages/analysis/main/StatisticsPage.vue'),
+          detail: () => import('pages/analysis/detail/DetailStatisticsList.vue')
         }
       },
-      { path: '/analysis/data',
+      { path: 'data',
         components: {
-          main: () => import('pages/analysis/DataPage.vue'),
-          detail: () => import('components/analysis/DetailDataList.vue')
+          main: () => import('pages/analysis/main/DataPage.vue'),
+          detail: () => import('pages/analysis/detail/DetailDataList.vue')
         }
       }
     ],
@@ -111,68 +121,68 @@ const routes = [
     children: [
       { path: '',
         components: {
-          main: () => import('pages/settings/ExceptPage.vue'),
-          detail: () => import('components/settings/DetailExceptList.vue')
+          main: () => import('pages/settings/main/ExceptPage.vue'),
+          detail: () => import('pages/settings/detail/DetailExceptList.vue')
         }
       },
-      { path: '/settings/except',
+      { path: 'except',
         components: {
-          main: () => import('pages/settings/ExceptPage.vue'),
-          detail: () => import('components/settings/DetailExceptList.vue')
+          main: () => import('pages/settings/main/ExceptPage.vue'),
+          detail: () => import('pages/settings/detail/DetailExceptList.vue')
         }
       },
-      { path: '/settings/exceptlog',
+      { path: 'exceptlog',
         components: {
-          main: () => import('pages/settings/ExceptlogPage.vue'),
-          detail: () => import('components/settings/DetailExceptlogList.vue')
+          main: () => import('pages/settings/main/ExceptlogPage.vue'),
+          detail: () => import('pages/settings/detail/DetailExceptlogList.vue')
         }
       },
-      { path: '/settings/workingtime',
+      { path: 'workingtime',
         components: {
-          main: () => import('pages/settings/WorkingtimePage.vue'),
-          detail: () => import('components/settings/DetailWorkingtimeList.vue')
+          main: () => import('pages/settings/main/WorkingtimePage.vue'),
+          detail: () => import('pages/settings/detail/DetailWorkingtimeList.vue')
         }
       },
-      { path: '/settings/userstate',
+      { path: 'userstate',
         components: {
-          main: () => import('pages/settings/UserstatePage.vue'),
-          detail: () => import('components/settings/DetailUserstateList.vue')
+          main: () => import('pages/settings/main/UserstatePage.vue'),
+          detail: () => import('pages/settings/detail/DetailUserstateList.vue')
         }
       },
-      { path: '/settings/device',
+      { path: 'device',
         components: {
-          main: () => import('pages/settings/DevicePage.vue'),
-          detail: () => import('components/settings/DetailDeviceList.vue')
+          main: () => import('pages/settings/main/DevicePage.vue'),
+          detail: () => import('pages/settings/detail/DetailDeviceList.vue')
         }
       },
-      { path: '/settings/menu',
+      { path: 'menu',
         components: {
-          main: () => import('pages/settings/MenuPage.vue'),
-          detail: () => import('components/settings/DetailMobileList.vue')
+          main: () => import('pages/settings/main/MenuPage.vue'),
+          detail: () => import('pages/settings/detail/DetailMobileList.vue')
         }
       },
-      { path: '/settings/knowledgeadmin',
+      { path: 'knowledgeadmin',
         components: {
-          main: () => import('pages/settings/KnowledgeadminPage.vue'),
-          detail: () => import('components/settings/DetailKnowledgeadminList.vue')
+          main: () => import('pages/settings/main/KnowledgeadminPage.vue'),
+          detail: () => import('pages/settings/detail/DetailKnowledgeadminList.vue')
         }
       },
-      { path: '/settings/usergroup',
+      { path: 'usergroup',
         components: {
-          main: () => import('pages/settings/UsergroupPage.vue'),
-          detail: () => import('components/settings/DetailUsergroupList.vue')
+          main: () => import('pages/settings/main/UsergroupPage.vue'),
+          detail: () => import('pages/settings/detail/DetailUsergroupList.vue')
         }
       },
-      { path: '/settings/mobilelog',
+      { path: 'mobilelog',
         components: {
-          main: () => import('pages/settings/MobilelogPage.vue'),
-          detail: () => import('components/settings/DetailMobilelogList.vue')
+          main: () => import('pages/settings/main/MobilelogPage.vue'),
+          detail: () => import('pages/settings/detail/DetailMobilelogList.vue')
         }
       },
-      { path: '/settings/system',
+      { path: 'system',
         components: {
-          main: () => import('pages/settings/SystemPage.vue'),
-          detail: () => import('components/settings/DetailSystem.vue')
+          main: () => import('pages/settings/main/SystemPage.vue'),
+          detail: () => import('pages/settings/detail/DetailSystem.vue')
         }
       },
     ],
@@ -181,7 +191,7 @@ const routes = [
     path: '/adminLogin',
     component: () => import('layouts/LoginLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/LoginPage.vue') },
+      { path: '', component: () => import('pages/Home/main/LoginPage.vue') },
     ],
   },
   {

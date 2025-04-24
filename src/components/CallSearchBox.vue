@@ -21,6 +21,7 @@
           transition-hide="none"
         >
           <q-date
+            color="grey-7"
             v-model="startDate"
             mask="YYYY-MM-DD"
             today-btn
@@ -48,6 +49,7 @@
           transition-hide="none"
         >
           <q-date
+            color="grey-7"
             v-model="endDate"
             mask="YYYY-MM-DD"
             today-btn
@@ -67,7 +69,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { global } from 'assets/js/publish/global'
 
 // ✅ 날짜 초기값은 오늘로
 const today = new Date().toISOString().slice(0, 10)

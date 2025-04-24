@@ -1,5 +1,5 @@
 <template>
-  <section id="tab1" class="tab-content">
+  <section class="tab-content active">
     <CallSearchBox/>
     <div class="history-box type-call">
       <template v-for="(section, sIdx) in historyList" :key="sIdx">

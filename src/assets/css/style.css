@@ -20,13 +20,13 @@ input, textarea, select {
   border-color: var(--color-danger) !important;
 }
 
-aside h1, .contents-c, .contents-r, .popup-container .popup-wrap .popup-footer, .form-col > dt, .ul-list-row li > b, .ul-list-row li > span, .view-mode, .myPhone-top, .myPhone-top .phone-btns, .myPhone-body, .myPhone-tab-title .tab-title, .myPhone-tab-content, .myPhone-tab-content .tab-content, .search-box, .search-box2, .search-box2 .wrap, .history-box, .history-box.type-call .history-item, .history-box.type-call .history-item .l, .history-box.type-call .history-item .c, .history-box.type-call .history-item .r, .history-box.type-call .history-item .c .info2, .history-box.type-call .history-item.active .info4, .history-box.type-call .history-item.active .phone-btns, .history-box.type-msg .history-item, .history-box.type-msg .history-item .l, .history-box.type-msg .history-item .r, .history-box.type-msg .history-item .l .info2, .history-box.type-msg .history-item .l .info2 span, .callDetail-tab, .callDetail-sec, .callDetail-sec .content, .IncidentType, .IncidentType .case-select ul, .IncidentType .case-select li, .player-box .player-info, .player-box .player-item, .player-box .player-item .timer, .player-box .player-item .bar, .chat-wrap .chat-item, .box-item, .summary-item dl .box-item:has(li:nth-child(2)) li, .summary-tag, .summary-tag dd, .contents-c-body, .mBox-wrap, .mBox-wrap .inner, .mBox-wrap .prev, .mBox-wrap .prev .item, .mBox-file-wrap, .mBox-file-wrap ul, .mBox-file-wrap ul .mBox-file, .mBox-file-wrap ul .mBox-file ol, .treeList .tree-item, .board-list .item, .board-list .item dt, .list-filter ul, .pagenation, .list-filter {
+aside h1, .contents-c, .contents-r, .popup-container .popup-wrap .popup-footer, .form-col > dt, .ul-list-row li > b, .ul-list-row li > span, .view-mode, .myPhone-top, .myPhone-top .phone-btns, .myPhone-body, .myPhone-tab-title .tab-title, .myPhone-tab-content, .myPhone-tab-content .tab-content, .search-box, .search-box2, .search-box2 .wrap, .history-box, .history-box.type-call .history-item, .history-box.type-call .history-item .l, .history-box.type-call .history-item .c, .history-box.type-call .history-item .r, .history-box.type-call .history-item .c .info2, .history-box.type-call .history-item.active .info4, .history-box.type-call .history-item.active .phone-btns, .history-box.type-msg .history-item, .history-box.type-msg .history-item .l, .history-box.type-msg .history-item .r, .history-box.type-msg .history-item .l .info2, .history-box.type-msg .history-item .l .info2 span, .callDetail-tab, .callDetail-sec, .callDetail-sec .content, .IncidentType, .IncidentType .case-select ul, .IncidentType .case-select li, .player-box .player-info, .player-box .player-item, .player-box .player-item .timer, .player-box .player-item .bar, .chat-wrap .chat-item, .box-item, .summary-item dl .box-item:has(li:nth-child(2)) li, .summary-tag, .summary-tag dd, .contents-c-body, .mBox-wrap, .mBox-wrap .inner, .mBox-wrap .prev, .mBox-wrap .prev .item, .mBox-file-wrap, .mBox-file-wrap ul, .mBox-file-wrap ul .mBox-file, .mBox-file-wrap ul .mBox-file ol, .treeList .tree-item, .board-list .item, .board-list .item dt, .list-filter ul, .pagenation, .board-view, .board-view dt, .list-filter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contents-c, .contents-r, .card-column, .ui-sec, .inner-sec, .myPhone-top, .myPhone-body, .myPhone-tab-content, .myPhone-tab-content .tab-content, .search-box, .history-box, .history-box.type-call .history-item .l, .history-box.type-call .history-item .c, .history-box.type-call .history-item .r, .history-box.type-call .history-item .c .info2, .history-box.type-call .history-item.active .info4, .history-box.type-msg .history-item .l, .history-box.type-msg .history-item .r, .history-box.type-msg .history-item .l .info2, .callDetail-sec, .callDetail-sec .content, .IncidentType, .chat-wrap, .chat-wrap .chat-body, .chat-wrap .chat-item .file-msg ul, .box-item, .contents-c-body, .mBox-wrap, .mBox-wrap .inner, .mBox-wrap .prev .item, .mBox-file-wrap, .mBox-file-wrap ul .mBox-file, .mBox-file-wrap ul .mBox-file ol, .board-list .item {
+.contents-c, .contents-r, .card-column, .table-wrapper, .ui-sec, .inner-sec, .myPhone-top, .myPhone-body, .myPhone-tab-content, .myPhone-tab-content .tab-content, .search-box, .history-box, .history-box.type-call .history-item .l, .history-box.type-call .history-item .c, .history-box.type-call .history-item .r, .history-box.type-call .history-item .c .info2, .history-box.type-call .history-item.active .info4, .history-box.type-msg .history-item .l, .history-box.type-msg .history-item .r, .history-box.type-msg .history-item .l .info2, .callDetail-sec, .callDetail-sec .content, .IncidentType, .chat-wrap, .chat-wrap .chat-body, .chat-wrap .chat-item .file-msg ul, .box-item, .contents-c-body, .mBox-wrap, .mBox-wrap .inner, .mBox-wrap .prev .item, .mBox-file-wrap, .mBox-file-wrap ul .mBox-file, .mBox-file-wrap ul .mBox-file ol, .board-list .item, .board-view, .board-view dt {
   display: flex;
   flex-direction: column;
 }
@@ -49,11 +49,6 @@ aside .nav .menu-sec .depth1-link::before, aside .nav .menu-sec .depth1-link::af
 }
 .list-filter .item.item-r {
   justify-content: flex-end;
-}
-
-.table-wrap.type-data, .table-wrap.table-scroll {
-  outline: 1px solid #ddd;
-  outline-offset: -1px;
 }
 
 .player-box, .chat-wrap, .box-item.type-line, .mBox-wrap {
@@ -266,6 +261,7 @@ aside .nav .depth2 .depth2-link:hover, aside .nav .depth2 .depth2-link.active {
   align-items: normal;
   justify-content: flex-start;
   padding: 20px;
+  min-width: 1px;
 }
 
 /*====================================================
@@ -276,16 +272,6 @@ Component style
   --card-padding: 20px;
 }
 
-.card {
-  /* &-header{
-      &{display:flex; align-items: center; justify-content: space-between; height:30px; margin-top:-8px; padding:0 var(--card-padding);}
-      b{font-weight: normal;}
-      b:first-child{display:flex; align-items: center; gap:8px;}
-      h3{font-size:16px; font-weight: 400;}
-      h3 + em{font-size:13px; color:#999; font-weight: 300;}
-      span{font-size:12px; }
-  } */
-}
 .card {
   flex: 1;
   display: flex;
@@ -655,6 +641,10 @@ select:hover {
   background: #fff;
   color: #1D1D1D;
 }
+.btn-soft {
+  background: #EDEDED;
+  color: #1D1D1D;
+}
 .btn-dark {
   background: var(--color-dark);
 }
@@ -755,40 +745,6 @@ select:hover {
   pointer-events: none !important;
 }
 
-/*
-.btn-toggle-slider {
-    &{ position: relative; @extend %inline-flex-center; width: auto; vertical-align: middle; }
-    .item-slider {
-        &{ position: relative; display:inline-block; width:28px; height:16px; background-color: #BCBFC1; transition: .4s; border-radius: 16px; vertical-align: inherit;}
-        &:before { position: absolute; content: ""; height: 12px; width: 12px; left: 2px; bottom: 2px; background-color: #fff; transition: .4s; border-radius: 50%;}
-    }
-    input{
-        &{opacity: 0; width: 0; height: 0; margin:0; padding:0; }
-        &:checked + .item-slider { background-color: var(--color-primary); }
-        &:focus + .item-slider { box-shadow: 0 0 1px var(--color-primary); }
-        &:checked + .item-slider:before {transform: translateX(12px); }
-    }
-    .item-text{display:inline-flex; margin-left:6px; font-size:12px; color:#444;}
-}
-
-
-.btn-toggle-radio{
-    &{@extend %inline-flex-center; gap:4px; font-size:13px;}
-    [type=radio]{
-        &{display: none;}
-        & + span{@extend %inline-flex-center; gap:6px; height:30px; padding:0 12px; color:#777; vertical-align: middle; border-radius: 5px; cursor:pointer;}
-        &:checked + span,
-        &:hover + span{background: rgba(54,85,242,.1); color:var(--color-primary); font-weight:600;}
-        & + span i{font-size:16px;}
-        &:disabled + span{color:#bbb; cursor: default; background: none; font-weight: normal;}
-    }
-}
-.disabled-item{
-    position:relative; pointer-events: auto !important;
-
-    .disabled-msg{position:absolute; top:100%; left:0; display:none; min-width:150px; line-height: 1.5; padding:8px; border-radius: 0 8px  8px  8px; background: #fff; border: 1px solid #E9EBEC; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.07); color:#444; font-size: 12px; cursor: default; white-space: nowrap;}
-    &:hover .disabled-msg{display:inline-flex !important;}
-} */
 .badge-xs, .badge-sm, .badge-md {
   gap: 8px;
   line-height: 1;
@@ -1009,21 +965,31 @@ select:hover {
   border: 1px solid #DEDEDE;
 }
 
-/* .accordion-wrap{
-    .accordion-body{
-        display:none;
+.accordion-wrap .accordion-body {
+  display: none;
+}
+.accordion-wrap .accordion-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/ico-accordion.svg) 50% 50% no-repeat;
+  transform: rotate(180deg);
+}
+.accordion-wrap.type-show .accordion-btn {
+  transform: rotate(0deg);
+}
+.accordion-wrap.type-show .accordion-body {
+  display: block;
+}
 
-        > .accordion-wrap{padding-left:20px;}
-    }
+.table-wrapper {
+  gap: 18px;
+}
+.table-wrapper + .table-wrapper {
+  margin-top: 50px;
+}
 
-    .accordion-tit{cursor: pointer; }
-    .accordion-tit:before{clear:both; display:inline-block; margin-right:5px; content: "\ea3e"; font-family: "xeicon"; font-size:1em; transform: rotate(0deg);}
-
-    &.type-show{
-        > .accordion-tit:before{transform: rotate(90deg); }
-        > .accordion-body{display:block;}
-    }
-} */
 .table-wrap {
   width: 100%;
   font-family: inherit;
@@ -1032,15 +998,21 @@ select:hover {
   width: 100%;
 }
 .table-wrap table th, .table-wrap table td {
-  height: 35px;
+  height: 32px;
   line-height: 1.2;
-  padding: 8px 8px;
+  padding: 12px 10px;
   text-align: left;
   vertical-align: middle;
   font-weight: normal;
   font-size: 13px;
-  color: #444;
+  color: #1d1d1d;
   white-space: normal;
+}
+.table-wrap table th {
+  font-weight: 600;
+}
+.table-wrap table td {
+  font-weight: 500;
 }
 .table-wrap table.center * {
   text-align: center;
@@ -1060,25 +1032,43 @@ select:hover {
 .table-wrap table th.left, .table-wrap table td.left {
   text-align: left !important;
 }
-.table-wrap.type-data th, .table-wrap.type-data td {
-  border-bottom: 1px solid #eee;
+.table-wrap table tr.th-sm th, .table-wrap table .th-sm {
+  padding: 8px 10px;
 }
-.table-wrap.type-data thead tr {
-  background: #f4f5f7;
+.table-wrap.type-data {
+  border-top: 1px solid #1D1D1D;
+}
+.table-wrap.type-data th, .table-wrap.type-data td {
+  border-bottom: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+}
+.table-wrap.type-data th:last-child,
+.table-wrap.type-data td:last-child,
+.table-wrap.type-data .border-r0 {
+  border-right: none;
+}
+.table-wrap.type-data thead tr, .table-wrap.type-data thead {
+  background: #EDEEF0;
 }
 .table-wrap.type-data thead th {
   border-bottom-color: #ddd;
-  font-weight: bold;
   white-space: nowrap;
 }
 .table-wrap.type-input th, .table-wrap.type-input td {
   text-align: left;
+  padding: 6px 0 6px 10px;
 }
 .table-wrap.type-input th {
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
-  font-weight: bold;
+  font-size: 14px;
+}
+.table-wrap.type-input td {
+  padding-left: 0;
+}
+.table-wrap.type-input .form-mix {
+  gap: 6px;
 }
 .table-wrap .sm th, .table-wrap .sm td {
   height: 40px;
@@ -1203,14 +1193,6 @@ select:hover {
   color: var(--color-disabled);
 }
 
-/* .dataNone{
-    &{@extend %flex-center;}
-    p{display:flex; flex-direction: column; gap:10px; text-align: center; color:#666; font-size:13px;}
-    p:before, p:after{clear:both;}
-    p:before{content:"\e9ab"; font-family: "xeicon"; font-size:30px; color:#bbb;}
-    p:after{margin-top:0; content:"No data"; font-weight: 400;}
-    &.type-text p:after{display:none;}
-} */
 .text-right {
   text-align: right !important;
 }
@@ -2221,13 +2203,13 @@ Style Start
   color: #1D1D1D;
   font-weight: 600;
 }
-.text-title.text-sm {
+.text-title.sm {
   font-size: 14px;
 }
-.text-title.text-md {
+.text-title.md {
   font-size: 16px;
 }
-.text-title.text-lg {
+.text-title.lg {
   font-size: 18px;
 }
 
@@ -2239,6 +2221,7 @@ Style Start
   min-height: 1px;
   padding: 20px 14px;
   border-top: 1px solid #dedede;
+  overflow-y: auto;
 }
 .contents-c-body .text-title {
   margin-bottom: 12px;
@@ -2555,6 +2538,36 @@ Style Start
   opacity: 0.4;
 }
 
+.board-view {
+  flex: 1;
+  align-items: normal;
+  padding: 0 10px;
+  min-height: 1px;
+}
+.board-view dt {
+  align-items: normal;
+  gap: 16px;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 20px 0;
+}
+.board-view dt b {
+  font-size: 30px;
+  color: #1D1D1D;
+}
+.board-view dt i {
+  font-size: 15px;
+  color: #767676;
+}
+.board-view dd {
+  flex: 1;
+  font-size: 14px;
+  white-space: pre-line;
+  padding: 48px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DEDEDE;
+  overflow-y: auto;
+}
+
 /*====================================================
 Guide style
 ====================================================*/
@@ -2671,6 +2684,3 @@ h5.guide-tit {
 .guide-font-type li i {
   width: 150px;
 }
-
-/* ul {display: flex; flex-wrap: wrap; gap: 20px;}
-li {flex: 0 0 calc((100% / 3) - (20px * (3 - 1) / 3));} //한줄에 3개씩 배열해라 */

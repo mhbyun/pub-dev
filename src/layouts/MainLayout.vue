@@ -15,7 +15,7 @@
     </article>
 
     <article class="contents-r">
-      <router-view name="detail" />
+      <router-view :key="$route.fullPath" name="detail" />
     </article>
 
     <!-- 전역 팝업 -->
@@ -47,7 +47,7 @@ const applyViewModeSize = (mode) => {
       window.resizeTo(Math.floor(screenWidth * 0.218), height)
       break
     case 'md':
-      window.resizeTo(Math.floor(screenWidth * 0.7), height)
+      window.resizeTo(Math.floor(screenWidth * 0.65), height)
       break
     case 'lg':
       window.resizeTo(Math.floor(screenWidth * 1), height)

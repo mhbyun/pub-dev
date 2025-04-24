@@ -1,5 +1,5 @@
 <template>
-  <section id="tab2" class="tab-content">
+  <section class="tab-content active">
     <CallSearchBox/>
 
     <div class="history-box type-msg">

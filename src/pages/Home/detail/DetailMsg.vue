@@ -5,7 +5,7 @@
     <div class="chat-wrap">
       <div class="chat-header">
         010-2976-3510 / 2025-01012345 / 피보험자 운전자 / 고애주
-        {{ headerInfo }} {{ detailData }}
+        {{ headerInfo }}
       </div>
       <div class="chat-body">
         <template v-for="(item, idx) in chatList" :key="idx">
@@ -23,7 +23,12 @@
 
             <!-- 파일 메시지 -->
             <div v-else-if="item.msgType === 'file'" class="text-msg file-msg">
-              <p><i class="file-ico type1"></i></p>
+              <i :class="['file-ico', {
+                'type1': item.msgType === 'img',
+                'type2': item.msgType === 'mp4',
+                'type3': item.msgType === 'file',
+                'type4': item.msgType === 'text'
+              }]"></i>
               <ul>
                 <li>제목 : <i>{{ item.fileInfo.name }}</i></li>
                 <li>용량 : <i>{{ item.fileInfo.size }}</i></li>
@@ -36,8 +41,20 @@
           </div>
         </template>
       </div>
-
     </div>
+    <div class="chat-input form-mix">
+					<a href="javascript:;" class="btn-md btn-basic" @click="openPopup">
+						<img src="../../../assets/images/ico-business.svg" alt="">
+						명함전송
+					</a>
+					<label class="input-mix flex1">
+						<input type="password" class="w100p">
+						<div class="unit hide-item">
+							<a href="javascript:;" class="remove"></a>
+						</div>
+					</label>
+					<a href="javascript:;" class="btn-md btn-secondary">전송</a>
+				</div>
   </section>
 </template>
 
@@ -45,11 +62,13 @@
 import { storeToRefs } from 'pinia'
 import { useDetailViewStore } from 'stores/detailView'
 import { ref, computed } from 'vue'
+import { usePopupStore } from 'stores/popup'
+import { POPUP_TYPES } from 'assets/js/publish/popupTypes'
 
 const { detailData, detailType, isVisible } = storeToRefs(useDetailViewStore())
 
 const headerInfo = computed(() => {
-  const data = detailData.value // ✅ 여기 꼭 필요!
+  const data =  detailType.value === 'message' ? detailData.value : null
   return [data?.phone, data?.callId, data?.role, data?.name]
     .filter(Boolean)
     .join(' / ')
@@ -93,6 +112,15 @@ const chatList = ref([
     time: '오전11:25'
   }
 ])
+
+const popup = usePopupStore()
+
+const openPopup = () => {
+  popup.open(POPUP_TYPES.ALERT, {
+    message: 'DetailMsg에서 열었어요!',
+    from: 'DetailMsg'
+  })
+}
 
 
 </script>

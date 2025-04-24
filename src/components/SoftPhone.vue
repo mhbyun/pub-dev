@@ -35,9 +35,9 @@
       <div class="phone-btns">
         <!-- 버튼 비활성화 시 class 추가: btn-disabled -->
 				<!-- <a href="#!" class="btn-md btn-success phone-btn call btn-disabled"></a> -->
-        <a href="#" class="btn-md btn-success phone-btn call"></a>
-        <a href="#" class="btn-md btn-danger phone-btn hangup"></a>
-        <a href="#" class="btn-md btn-dark phone-btn msg"></a>
+        <a @click="makeCall" class="btn-md btn-success phone-btn call"></a>
+        <a @click="closedCall" class="btn-md btn-danger phone-btn hangup"></a>
+        <a @click="makeMsg" class="btn-md btn-dark phone-btn msg"></a>
       </div>
     </div>
   </div>
@@ -70,6 +70,20 @@ const recentClike = (item) => {
   console.log("recentClike : ", item);
   appNum.value=item;
   toggleDropdown()
+}
+
+const makeCall = (item) => {
+  console.log("makeCall : ");
+
+}
+
+const closedCall = (item) => {
+  console.log("closedCall : ");
+
+}
+const makeMsg = (item) => {
+  console.log("makeMsg : ");
+
 }
 
 

@@ -6,7 +6,7 @@
       <div class="inner">
         <div class="prev">
           <p class="item type-img active">
-            <img src="../assets/images/ex-img.png" alt="">
+            <img src="../../../assets/images/ex-img.png" alt="">
           </p>
           <p class="item type-file">
             <i class="file-ico lg type4"></i>

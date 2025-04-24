@@ -29,7 +29,7 @@
             </div>
             <span class="unit">
               <a href="javascript:;" class="btn-ico" @click="anotherAppNumClick()">
-                <img src="../assets/images/ico-import.svg" alt="">
+                <img src="../../../assets/images/ico-import.svg" alt="">
               </a>
             </span>
           </div>
@@ -87,14 +87,14 @@
 
         <div class="player-box">
           <p class="player-info">
-            <b><i>{{ detailData?.name ? detailData?.name+' 님':'' }}{{ detailData?.callId ? ' ( '+detailData?.callId+' )':'' }} / 2025-0101_12345.wav </i></b>
+            <b><i>{{ callDetail?.name ? callDetail?.name+' 님':'' }}{{ callDetail?.callId ? ' ( '+callDetail?.callId+' )':'' }} / 2025-0101_12345.wav </i></b>
             <a href="javascript:;" class="btn-sm btn-ghost">청취</a>
           </p>
 
           <!-- 청취 시 활성화 : active -->
           <ul class="player-item active">
             <li>
-              <a href="#!" class="play-btn play-btn1"><img src="../assets/images/play-ico2.svg" alt=""></a>
+              <a href="#!" class="play-btn play-btn1"><img src="../../../assets/images/play-ico2.svg" alt=""></a>
             </li>
             <li class="timer">
               <span>2:47</span>
@@ -105,7 +105,7 @@
               <span><i style="width:60%;"></i></span>
             </li>
             <li>
-              <a href="#!" class="play-btn play-btn2"><img src="../assets/images/play-ico3.svg" alt=""></a>
+              <a href="#!" class="play-btn play-btn2"><img src="../../../assets/images/play-ico3.svg" alt=""></a>
             </li>
           </ul>
         </div>
@@ -138,7 +138,7 @@
           <p class="summary-title">고애주님(2025-0101012345)</p>
           <dl class="form-col">
             <dt>
-              <i><img src="../assets/images/ico-summary1.svg" alt=""></i>
+              <i><img src="../../../assets/images/ico-summary1.svg" alt=""></i>
               <span>상담 주제</span>
             </dt>
             <dd>
@@ -149,7 +149,7 @@
           </dl>
           <dl class="form-col">
             <dt>
-              <i><img src="../assets/images/ico-summary2.svg" alt=""></i>
+              <i><img src="../../../assets/images/ico-summary2.svg" alt=""></i>
               <span>고객 내용 요약</span>
             </dt>
             <dd>
@@ -168,7 +168,7 @@
           </dl>
           <dl class="form-col">
             <dt>
-              <i><img src="../assets/images/ico-summary3.svg" alt=""></i>
+              <i><img src="../../../assets/images/ico-summary3.svg" alt=""></i>
               <span>상담사 내용 요약</span>
             </dt>
             <dd>
@@ -208,13 +208,18 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, watch, computed  } from 'vue'
 import { usePopupStore } from 'stores/popup'
 import { POPUP_TYPES } from 'assets/js/publish/popupTypes'
 import { storeToRefs } from 'pinia'
 import { useDetailViewStore } from 'stores/detailView'
 
 const { detailData, detailType, isVisible } = storeToRefs(useDetailViewStore())
+
+// computed 로 타입 가드
+const callDetail = computed(() => {
+  return detailType.value === 'call' ? detailData.value : null
+})
 
 const isOpen = ref(false)
 const appNum = ref('')

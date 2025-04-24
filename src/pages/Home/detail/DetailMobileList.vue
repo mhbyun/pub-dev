@@ -5,13 +5,55 @@
         <span class="unit">
           <a href="javascript:;" class="btn-ico type-text"></a>
         </span>
-        <input type="text" placeholder="yyyy-mm-dd" value="2022-11-01" readonly="">
+        <input
+          type="text"
+          placeholder="yyyy-mm-dd"
+          v-model="startDate"
+          readonly
+          @click="showStartDate"
+        />
+
+        <q-popup-proxy
+          ref="startRef"
+          cover
+          transition-show="none"
+          transition-hide="none"
+        >
+          <q-date
+            color="grey-7"
+            v-model="startDate"
+            mask="YYYY-MM-DD"
+            today-btn
+            @update:model-value="onStartSelect"
+          />
+        </q-popup-proxy>
       </div>
       <div class="input-mix type-datepicker w150px">
         <span class="unit">
           <a href="javascript:;" class="btn-ico type-text"></a>
         </span>
-        <input type="text" placeholder="yyyy-mm-dd" value="2022-11-01" readonly="">
+        <input
+          type="text"
+          placeholder="yyyy-mm-dd"
+          v-model="endDate"
+          readonly
+          @click="showEndDate"
+        />
+
+        <q-popup-proxy
+          ref="endRef"
+          cover
+          transition-show="none"
+          transition-hide="none"
+        >
+          <q-date
+            color="grey-7"
+            v-model="endDate"
+            mask="YYYY-MM-DD"
+            today-btn
+            @update:model-value="onEndSelect"
+          />
+        </q-popup-proxy>
       </div>
       <select class="w150px">
         <option>전체선택</option>
@@ -87,7 +129,25 @@
 <script setup>
 import { ref } from 'vue'
 
-// ✅ 데이터 구조: 날짜별 그룹화
+const today = new Date().toISOString().slice(0, 10)
+
+const startDate = ref(today)
+const endDate = ref(today)
+
+const startRef = ref(null)
+const endRef = ref(null)
+
+const showStartDate = () => {
+  setTimeout(() => startRef.value?.show(), 0)
+}
+const showEndDate = () => {
+  setTimeout(() => endRef.value?.show(), 0)
+}
+
+const onStartSelect = () => startRef.value?.hide()
+const onEndSelect = () => endRef.value?.hide()
+
+//데이터 구조: 날짜별 그룹화
 const fileGroups = ref([
   {
     date: '2025년 3월 31일 (화)',
