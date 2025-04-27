@@ -2,5 +2,6 @@ export const POPUP_TYPES = {
   FORM: 'popupForm',
   DIRECT: 'popupDirect',
   ALERT: 'popupAlert',
-  CONFIRM: 'popupConfirm'
-}
+  CONFIRM: 'popupConfirm',
+  HISTORY: 'popupHistory',
+};
