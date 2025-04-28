@@ -1,6 +1,6 @@
 <template>
   <div class="popup-container" :class="visible ? 'active' : ''">
-    <div class="popup-wrap">
+    <div class="popup_wrap type_split">
       <div class="popup-header">
         <a href="#" class="close" @click.prevent="onClose"></a>
       </div>
@@ -348,39 +348,39 @@
 </script>
 
 <style>
-  .popup-wrap {
+  popup_wrap.type_split {
     position: relative;
   }
-  .popup-wrap .popup-header {
+  popup_wrap.type_split .popup-header {
     position: absolute !important;
     right: 37px;
     top: 20px;
   }
-  .popup-wrap .popup-body {
+  popup_wrap.type_split .popup-body {
     height: calc(100vh - 100px);
   }
-  .popup-wrap .popup-body .split-box {
+  popup_wrap.type_split .popup-body .split-box {
     height: inherit;
   }
-  .popup-wrap .popup-body .split-box section {
+  popup_wrap.type_split .popup-body .split-box section {
     display: flex;
     flex-direction: column;
   }
 
-  .popup-wrap .popup-body .split-box section.left .content {
+  popup_wrap.type_split .popup-body .split-box section.left .content {
     display: flex;
     flex: 1;
     min-height: 10px;
     margin-top: 10px;
   }
 
-  .popup-wrap .popup-body .split-box section.right .content {
+  popup_wrap.type_split .popup-body .split-box section.right .content {
     flex: 1;
     min-height: 10px;
     display: flex;
     flex-direction: column;
   }
-  .popup-wrap
+  popup_wrap.type_split
     .popup-body
     .split-box
     section.right
